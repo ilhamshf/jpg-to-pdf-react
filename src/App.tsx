@@ -40,7 +40,7 @@ function App() {
       <div className="images-container">
         {uploadedImages.length > 0 ? (
           uploadedImages.map((image) => (
-            <img key={image.src} src={image.src} className="uploaded-image" />
+            <img key={image.src} src={image.src} alt={image.src} className="uploaded-image" />
           ))
         ) : (
           <p>Upload gambar dulu kak baru buat pdf...</p>
